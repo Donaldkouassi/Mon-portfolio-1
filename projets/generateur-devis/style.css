@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.devis-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.devis-container header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.devis-container header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.devis-container header p {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+#devis-form {
+    padding: 30px;
+}
+
+#devis-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: #f4f4f4;
+}
+
+.service-item label {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.service-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.service-item input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+.service-item input[type="checkbox"]:checked::before {
+    content: '✔';
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    top: -1px;
+    left: 2px;
+}
+
+.total-container {
+    background-color: #f0f2f5;
+    padding: 30px;
+    text-align: center;
+}
+
+.total-container h2 {
+    font-size: 1.2rem;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.total-prix {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .devis-container header {
+        padding: 20px;
+    }
+    #devis-form {
+        padding: 20px;
+    }
+    .service-item {
+        padding: 12px;
+    }
+    .service-item label {
+        font-size: 1rem;
+    }
+}
+.btn-contacter {
+    display: inline-block;
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacter:hover {
+    background-color: #218838;
+}

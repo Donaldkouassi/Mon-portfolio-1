@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Liste de Tâches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-container">
+        <header>
+            <h1>Ma Liste de Tâches</h1>
+        </header>
+
+        <form id="new-task-form">
+            <input 
+                type="text" 
+                id="new-task-input" 
+                placeholder="Que voulez-vous faire aujourd'hui ?">
+            <button type="submit" id="new-task-submit">Ajouter</button>
+        </form>
+
+        <section class="task-list-container">
+            <h2>Tâches :</h2>
+            
+            <ul id="task-list">
+                </ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

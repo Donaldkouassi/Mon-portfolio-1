@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Devis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="devis-container">
+        <header>
+            <h1>Devis de Services Informatiques</h1>
+            <p>Sélectionnez les services dont vous avez besoin pour un devis instantané.</p>
+        </header>
+
+        <form id="devis-form">
+            <h2>Nos Services</h2>
+            
+            <div class="service-item">
+                <input type="checkbox" id="gestion-reseau" name="service" value="1500">
+                <label for="gestion-reseau">Gestion de Réseau (1500 €)</label>
+            </div>
+
+            <div class="service-item">
+                <input type="checkbox" id="maintenance" name="service" value="800">
+                <label for="maintenance">Maintenance Préventive (800 €)</label>
+            </div>
+
+            <div class="service-item">
+                <input type="checkbox" id="dev-web" name="service" value="2500">
+                <label for="dev-web">Développement Site Web (2500 €)</label>
+            </div>
+
+            <div class="service-item">
+                <input type="checkbox" id="support-24" name="service" value="1000">
+                <label for="support-24">Support 24/7 (1000 €)</label>
+            </div>
+        </form>
+
+        <section class="total-container">
+            <h2>Total Estimé</h2>
+            <div class="total-prix">
+                <span id="total-devis">0.00</span> €
+            </div>
+            
+            <a href="#" id="btn-contacter" class="btn-contacter">
+                Contacter pour commander
+            </a>
+            
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
